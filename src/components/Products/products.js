@@ -1,5 +1,5 @@
 import Product from "../product/Product";
-import "./products.css";
+import "./Products.css";
 const Products = ({ productList }) => (
   <section className="products">
     {productList.map((product) => (
@@ -8,6 +8,7 @@ const Products = ({ productList }) => (
         title={product.title}
         price={product.price}
         image={product.image}
+        category={product.category}
       />
     ))}
   </section>
