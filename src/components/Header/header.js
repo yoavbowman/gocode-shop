@@ -1,10 +1,6 @@
 import "./Header.css";
 
-const Header = ({ productList, filterCategories }) => {
-  const categories = productList
-    .map((p) => p.category)
-    .filter((value, index, array) => array.indexOf(value) === index);
-
+const Header = ({ categories, filterCategories }) => {
   return (
     <nav className="product-filter">
       <h1>Jackets</h1>
